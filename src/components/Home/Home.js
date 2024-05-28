@@ -11,7 +11,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import GoalSection from "./GoalSection";
 import { HomeMain } from "../../img";
 import ServiceSection from "./ServiceSection";
-
+import './home.css'
 function Home() {
   return (
     <section>

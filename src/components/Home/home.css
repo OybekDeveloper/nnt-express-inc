@@ -1,0 +1,17 @@
+.home-about-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .home-about-description h1 {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .home-about-description ul {
+    width: 100%;
+  }
+  

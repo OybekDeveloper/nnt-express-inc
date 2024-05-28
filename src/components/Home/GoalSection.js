@@ -7,12 +7,17 @@ const GoalSection = () => {
       <Container>
         <Row>
           <Col md={12} xs={{ order: 1 }} className="home-about-description ">
-            <h1 className="purple" style={{ fontSize: "2.6em",fontWeight:"bold" }}>Goals to Achieve</h1>
+            <h1
+              className="purple"
+              style={{ fontSize: "2.6em", fontWeight: "bold" }}
+            >
+              Goals to Achieve
+            </h1>
           </Col>
         </Row>
         <Row>
           <Col
-            md={8}
+            md={3}
             xs={{ order: 1 }}
             className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
           >
@@ -28,6 +33,12 @@ const GoalSection = () => {
             >
               VISION
             </h1>
+          </Col>
+          <Col
+            md={9}
+            xs={{ order: 1 }}
+            className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
+          >
             <div>
               <ul className="text-start">
                 <li className="animate__animated animate__fadeInRight">
@@ -45,7 +56,7 @@ const GoalSection = () => {
         </Row>
         <Row>
           <Col
-            md={8}
+            md={3}
             xs={{ order: 1 }}
             className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
           >
@@ -61,6 +72,12 @@ const GoalSection = () => {
             >
               SECURITY
             </h1>
+          </Col>
+          <Col
+            md={9}
+            xs={{ order: 1 }}
+            className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
+          >
             <div>
               <ul className="text-start">
                 <li className="animate__animated animate__fadeInRight delay-2s">
@@ -78,7 +95,7 @@ const GoalSection = () => {
         </Row>
         <Row>
           <Col
-            md={8}
+            md={3}
             xs={{ order: 1 }}
             className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
           >
@@ -94,6 +111,12 @@ const GoalSection = () => {
             >
               CONTINUITY
             </h1>
+          </Col>
+          <Col
+            md={9}
+            xs={{ order: 1 }}
+            className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
+          >
             <div>
               <ul className="text-start">
                 <li className="animate__animated animate__fadeInRight delay-4s">
