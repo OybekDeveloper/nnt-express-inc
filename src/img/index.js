@@ -16,6 +16,14 @@ import services1 from "./services1.jpg";
 import services2 from "./services2.jpg";
 import services3 from "./services3.jpg";
 import services4 from "./services4.jpg";
+import logisticimg from './logistic.jpg'
+import pahlavonuz from './pahlavon.uz.jpg'
+import daladan from './daladan.jpg'
+import daladanadmin from './daladan admin.jpg'
+import artifex from './artifex.jpg'
+import hrai from './hrai.jpg'
+import biznes from './biznes.jpg'
+
 export {
   HomeMain,
   logo1,
@@ -35,4 +43,11 @@ export {
   services2,
   services3,
   services4,
+  logisticimg,
+  pahlavonuz,
+  daladan,
+  daladanadmin,
+  artifex,
+  hrai,
+  biznes
 };

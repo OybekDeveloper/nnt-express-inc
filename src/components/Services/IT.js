@@ -6,8 +6,10 @@ import chatify from "../../Assets/Projects/chatify.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import ServicesCard from "./ServicesCard";
 import { services1, services2, services3, services4 } from "../../img";
+import { useNavigate } from "react-router-dom";
 
 function ITServices() {
+  const navigate =useNavigate()
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -15,38 +17,26 @@ function ITServices() {
         <h1 className="project-heading">
           <strong className="purple">IT Services </strong>
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={6} lg={5} className="project-card">
+          <Col onClick={()=>navigate('/contact')} md={6} lg={5} className="project-card">
             <ServicesCard
               imgPath={services4}
               isBlog={false}
               title="Web development"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              description="We create top-quality websites, ranging from corporate sites to web applications."
               ghLink="https://github.com/soumyajit4419/Chatify"
               demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
-          <Col md={6} lg={5} className="project-card">
-            <ServicesCard
-              imgPath={services3}
-              isBlog={false}
-              title="Artificial Intelligence"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"
-            />
-          </Col>
+       
 
-          <Col md={6} lg={5} className="project-card">
+          <Col onClick={()=>navigate('/contact')} md={6} lg={5} className="project-card">
             <ServicesCard
               imgPath={services2}
               isBlog={false}
               title="CRM system"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              description="We automate business processes and develop electronic management systems"
               ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
               demoLink="https://blogs.soumya-jit.tech/"
             />
@@ -76,12 +66,23 @@ function ITServices() {
           </Col>
  */}
 
-          <Col md={6} lg={5} className="project-card">
+          <Col onClick={()=>navigate('/contact')} md={6} lg={5} className="project-card">
             <ServicesCard
               imgPath={services1}
               isBlog={false}
               title="Mobile apps"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              description="We provide development and technical support for mobile applications of any complexity."
+              ghLink="https://github.com/soumyajit4419/Editor.io"
+              demoLink="https://editor.soumya-jit.tech/"
+            />
+          </Col>
+
+          <Col onClick={()=>navigate('/contact')} md={6} lg={5} className="project-card">
+            <ServicesCard
+              imgPath={services3}
+              isBlog={false}
+              title="Artificial Intelligence"
+              description="Development of intelligent systems with human-like capabilities"
               ghLink="https://github.com/soumyajit4419/Editor.io"
               demoLink="https://editor.soumya-jit.tech/"
             />

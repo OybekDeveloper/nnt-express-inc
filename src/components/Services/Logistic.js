@@ -1,10 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-import ServicesCard from "./ServicesCard";
+import { logisticimg } from "../../img"; // `logisticimg` o'zgaruvchisini import qo'shing
 
 function Logistic() {
   return (
@@ -12,82 +9,85 @@ function Logistic() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-         <strong className="purple">Logistics Services </strong>
+          <strong className="purple">Logistics Services </strong>
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
-        {/* <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ServicesCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Web development"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
+        <Row>
+          <Col
+            md={7}
+            style={{
+              textAlign: "start",
+              justifyContent: "start",
+              paddingTop: "30px",
+              paddingBottom: "50px",
+            }}
+          >
+            <p className="clamp2">Logistica Dispatcher for Trucks</p>
+            <p className="clamp4">
+              Welcome to Logistica Dispatcher for Trucks, your trusted partner in efficient and reliable truck dispatching services. Our mission is to streamline your logistics operations, ensuring timely deliveries and maximizing your fleet’s productivity.
+            </p>
+            <p className="clamp4">
+              <strong>Our Services</strong>
+              <ul>
+                <li>
+                  <strong>Real-Time Tracking and Route Optimization</strong><br />
+                  - Monitor your fleet in real-time with our advanced GPS tracking system.<br />
+                  - Optimize routes for fuel efficiency and on-time deliveries.
+                </li>
+                <li>
+                  <strong>24/7 Dispatch Support</strong><br />
+                  - Our experienced dispatchers are available around the clock to assist with any issues.<br />
+                  - Dedicated support to ensure your trucks are always on the move.
+                </li>
+                <li>
+                  <strong>Load Planning and Scheduling</strong><br />
+                  - Efficient load planning to maximize cargo capacity and reduce empty miles.<br />
+                  - Smart scheduling to ensure timely pickups and deliveries.
+                </li>
+                <li>
+                  <strong>Compliance and Documentation Management</strong><br />
+                  - Stay compliant with all industry regulations and requirements.<br />
+                  - We handle all necessary documentation and reporting.
+                </li>
+                <li>
+                  <strong>Advanced Analytics and Reporting</strong><br />
+                  - Gain insights into your fleet’s performance with our detailed analytics.<br />
+                  - Make data-driven decisions to improve your operations.
+                </li>
+              </ul>
+            </p>
           </Col>
-          
-          <Col md={4} className="project-card">
-            <ServicesCard
-              imgPath={editor}
-              isBlog={false}
-              title="Artificial Intelligence"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
+          <Col
+            md={5}
+            style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+            className="about-img"
+          >
+            <img style={{ borderRadius: '12px', }} src={logisticimg} alt="about" className="img-fluid" />
           </Col>
-
-          <Col md={4} className="project-card">
-            <ServicesCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="CRM system"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
+          <Col
+            md={12}
+            style={{
+              textAlign: "start",
+              justifyContent: "start",
+              paddingTop: "30px",
+              paddingBottom: "50px",
+            }}
+          >
+            <p className="clamp4">
+              <strong>Why Choose Us?</strong>
+              <ul>
+                <li>Experienced Team: Our team of professionals has years of experience in the logistics and transportation industry.</li>
+                <li>Cutting-Edge Technology: We use the latest technology to provide top-notch dispatching services.</li>
+                <li>Customer-Centric Approach: Your satisfaction is our priority. We tailor our services to meet your unique needs.</li>
+                <li>Cost-Effective Solutions: Optimize your operations and reduce costs with our efficient dispatching services.</li>
+              </ul>
+            </p>
+            <p className="clamp4">
+              <strong>Get Started Today!</strong>
+              <br />
+              Ready to take your logistics operations to the next level? Contact us today to learn more about our services and how we can help you achieve your goals.
+            </p>
           </Col>
-
-          <Col md={4} className="project-card">
-            <ServicesCard
-              imgPath={editor}
-              isBlog={false}
-              title="Branding"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          
-          <Col md={4} className="project-card">
-            <ServicesCard
-              imgPath={editor}
-              isBlog={false}
-              title="UI&UX"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-
-         
-
-          <Col md={4} className="project-card">
-            <ServicesCard
-              imgPath={editor}
-              isBlog={false}
-              title="Mobile apps"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-        </Row> */}
+        </Row>
       </Container>
     </Container>
   );
