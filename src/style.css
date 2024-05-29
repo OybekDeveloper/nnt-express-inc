@@ -545,6 +545,9 @@ button:focus {
   padding-left: 25px !important;
   padding-right: 25px !important;
   height: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-card-view {
@@ -554,6 +557,7 @@ button:focus {
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
+  max-width: 400px;
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;
@@ -835,7 +839,7 @@ button:focus {
   display: none !important;
 }
 .clamp {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(1.5rem, 5vw, 4rem);
 }
 
 .clamp1 {

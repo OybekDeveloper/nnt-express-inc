@@ -29,11 +29,12 @@
 
 
 .shimmer {
+  width: 100%;
   font-family: "Lato";
   font-weight: 700;
   font-size: 3em;
   margin: 0 auto;
-  padding: 0 140px 0 0;
+  padding: 0 0 0 0;
   display: inline;
   margin-bottom: 0;
 }

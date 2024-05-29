@@ -11,8 +11,11 @@ import deliberation from "./DELIBERATION.svg";
 import evalution from "./EVALUATION.svg";
 import solution from "./SOLUTION.svg";
 import finish from "./FUNISH.svg";
-import email from './email.svg'
-
+import email from "./email.svg";
+import services1 from "./services1.jpg";
+import services2 from "./services2.jpg";
+import services3 from "./services3.jpg";
+import services4 from "./services4.jpg";
 export {
   HomeMain,
   logo1,
@@ -27,5 +30,9 @@ export {
   solution,
   deliberation,
   finish,
-  email
+  email,
+  services1,
+  services2,
+  services3,
+  services4,
 };
