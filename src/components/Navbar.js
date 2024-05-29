@@ -117,13 +117,13 @@ function NavBar() {
               </div>
             </Nav.Item>
             <motion.div
-            className="d-md-none"
+            className="d-md-none mobile-services-container"
               initial={{ height: 0, scale: 0 }}
               animate={{ height: isOpen ? 100 : 0, scale: isOpen ? 1 : 0 }}
             >
               {servicesData.map((item, idx) => (
                 <p
-                  className="clamp3 text-end cursor-pointer mobile-services"
+                  className="text-center cursor-pointer mobile-services"
                   onClick={() => handleClickServices(item)}
                   key={idx}
                 >

@@ -80,8 +80,10 @@ button:focus {
 /* --------- */
 /* Navbar Section  */
 /* --------- */
-.line-style{
-  
+.line-style {
+  width: 100%;
+  height: 1px;
+  background-color: #2d1950;
 }
 
 .services-options {
@@ -92,9 +94,9 @@ button:focus {
   cursor: pointer;
   text-align: start !important;
 }
-@media (max-width:776px) {
-  .services-options{
-    display: none!important;
+@media (max-width: 776px) {
+  .services-options {
+    display: none !important;
   }
 }
 .services-options p {
@@ -460,12 +462,20 @@ button:focus {
 .icon-colour {
   color: #700c86 !important;
 }
-.mobile-services{
+.mobile-services {
+  margin-top: 10px;
+  font-size: 0.8em !important;
   transition: all 0.5s ease;
 }
+.mobile-services-container {
+  border: 1px solid #9b11ba;
+  border-radius: 12px;
+}
+
 .mobile-services:hover {
   color: #9b11ba !important;
 }
+
 /* --------- */
 /* Footer */
 /* --------- */

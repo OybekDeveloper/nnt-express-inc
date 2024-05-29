@@ -22,7 +22,7 @@ const GoalSection = () => {
             className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
           >
             <h1
-            className="clamp2"
+            className="clamp3"
               style={{
                 width: "200px",
                 padding: "10px 20px",
@@ -61,7 +61,7 @@ const GoalSection = () => {
             className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
           >
             <h1
-            className="clamp2"
+            className="clamp3"
               style={{
                 width: "200px",
                 padding: "10px 20px",
@@ -100,7 +100,7 @@ const GoalSection = () => {
             className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
           >
             <h1
-            className="clamp2"
+            className="clamp3"
               style={{
                 width: "200px",
                 padding: "10px 20px",
