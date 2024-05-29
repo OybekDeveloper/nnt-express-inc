@@ -106,7 +106,7 @@ function About() {
           >
             <p className="clamp2">WELCOME TO</p>
             <h1 className="purple clamp" style={{ paddingBottom: "20px" }}>
-              NNT EXPRESS INC
+              NNT EXPRESS INC afffffffff
             </h1>
             <p className="clamp4">
               A leading IT company specializing in automation solutions. We're
