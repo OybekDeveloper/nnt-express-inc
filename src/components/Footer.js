@@ -36,64 +36,64 @@ function Footer() {
             </Col>
             <Col lg={4} md={6} sm={12} className="home-about-social">
               <ul className="home-about-social-links d-flex  gap-3 flex-column">
-                <Row className="social-icons d-flex flex-row justify-content-start align-items-center">
+                <Row className="social-icons d-flex flex-row justify-content-center align-items-center">
                   <Col xs={2}>
                     <a
                       href="/"
                       target="_blank"
                       rel="noreferrer"
-                      className="icon-colour home-social-icons"
+                      className="icon-colour home-social-icons d-flex flex-row justify-content-center align-items-center"
                     >
-                      <TfiEmail />
+                      <TfiEmail size={20} />
                     </a>
                   </Col>
-                  <Col >
+                  <Col>
                     <h6 className="p-0 m-0 clamp4 text-start">
                       xkamron2001@gmail.com
                     </h6>
                   </Col>
                 </Row>
-                <Row className="social-icons d-flex flex-row justify-content-start align-items-center">
+                <Row className="social-icons d-flex flex-row justify-content-center align-items-center">
                   <Col xs={2}>
                     <a
                       href="/"
                       target="_blank"
                       rel="noreferrer"
-                      className="icon-colour home-social-icons"
+                      className="icon-colour home-social-icons d-flex flex-row justify-content-center align-items-center"
                     >
-                      <FaTelegramPlane />
+                      <FaTelegramPlane size={20} />
                     </a>
                   </Col>
                   <Col>
                     <h6 className="p-0 m-0 clamp4 text-start">@tnodirt</h6>
                   </Col>
                 </Row>
-                <Row className="social-icons d-flex flex-row justify-content-start align-items-center">
+                <Row className="social-icons d-flex flex-row justify-content-center align-items-center">
                   <Col xs={2}>
                     <a
                       href="/"
                       target="_blank"
                       rel="noreferrer"
-                      className="icon-colour home-social-icons"
+                      className="icon-colour home-social-icons d-flex flex-row justify-content-center align-items-center"
                     >
-                      <FaPhoneAlt />
+                      <FaPhoneAlt size={20} />
                     </a>
                   </Col>
                   <Col>
-                    <h6 className="p-0 m-0 clamp4 text-start">
+                    <h6 className="p-0 m-0 clamp4 text-start font-family-san-serif">
                       +998 90 940 33 36
                     </h6>
                   </Col>
                 </Row>
-                <Row className="social-icons d-flex flex-row justify-content-start align-items-center">
+                <Row className="social-icons d-flex flex-row justify-content-center align-items-center">
                   <Col xs={2}>
                     <a
                       href="/"
                       target="_blank"
                       rel="noreferrer"
-                      className="icon-colour home-social-icons"
+                      className="icon-colour home-social-icons d-flex flex-row justify-content-center align-items-center"
                     >
-                      <IoMdHome />
+                      <IoMdHome size={25} />
                     </a>
                   </Col>
                   <Col>
@@ -105,8 +105,14 @@ function Footer() {
                 </Row>
               </ul>
             </Col>
-            <Col md={4} className="home-about-social">
-              <Nav className="d-flex flex-column justify-content-center align-items-md-center align-items-sm-start" defaultActiveKey="#home">
+            <Col
+              md={4}
+              className="home-about-social d-flex justify-content-center"
+            >
+              <Nav
+                className="d-flex flex-column justify-content-center align-items-md-start align-items-sm-start"
+                defaultActiveKey="#home"
+              >
                 <Nav.Item className="">
                   <Nav.Link className="purple" as={Link} to="/">
                     <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
@@ -145,22 +151,10 @@ function Footer() {
       </Container>
       <div className="line-style"></div>
       <Row className="mt-4">
-        <Col md={4} className="footer-copywright">
-          <h3>
-            Designed and Developed by{" "}
-            <a href="https://t.me/coderbux" className="cursor-pointer purple">
-              @coderbux
-            </a>{" "}
-            &{" "}
-            <a href="https://t.me/nurbol_xan" className="cursor-pointer purple">
-              @nurbol_xan
-            </a>
-          </h3>
+        <Col md={6} className="footer-copywright">
+          <h3>Copyright © {year} NNT Express INC</h3>
         </Col>
-        <Col md={4} className="footer-copywright">
-          <h3>Copyright © {year} NNTExpress</h3>
-        </Col>
-        <Col md={4} className="footer-body">
+        <Col md={6} className="footer-body">
           <ul className="footer-icons d-flex justify-content-center">
             <li className="social-icons">
               <a

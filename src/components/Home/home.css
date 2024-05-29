@@ -1,17 +1,123 @@
 .home-about-description {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.home-about-description h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.home-about-description ul {
+  width: 100%;
+}
+
+.text-top {
+  margin-top: 150px;
+}
+
+@media (max-width: 768px) {
+  .text-top {
+    margin-top: 40px;
   }
-  
-  .home-about-description h1 {
-    width: 100%;
-    text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+
+
+.shimmer {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 3em;
+  margin: 0 auto;
+  padding: 0 140px 0 0;
+  display: inline;
+  margin-bottom: 0;
+}
+
+.shimmer {
+  text-align: center;
+  color: rgba(199, 112, 240, 0.07);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#8a48a0),
+    to(#8a48a0),
+    color-stop(0.5, #c686e4)
+  );
+  background: -moz-gradient(
+    linear,
+    left top,
+    right top,
+    from(#8a48a0),
+    to(#8a48a0),
+    color-stop(0.5, #c686e4)
+  );
+  background: gradient(
+    linear,
+    left top,
+    right top,
+    from(#8a48a0),
+    to(#8a48a0),
+    color-stop(0.5, #c686e4)
+  );
+  -webkit-background-size: 200px 100%;
+  -moz-background-size: 200px 100%;
+  background-size: 200px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 3.5s;
+  -moz-animation-duration: 3.5s;
+  animation-duration: 3.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #8a48a0;
+}
+
+@-moz-keyframes shimmer {
+  0% {
+    background-position: top left;
   }
-  
-  .home-about-description ul {
-    width: 100%;
+  100% {
+    background-position: top right;
   }
-  
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+@-o-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+

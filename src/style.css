@@ -263,6 +263,9 @@ button:focus {
 /* --------- */
 /* Home section */
 /* --------- */
+.font-family-san-serif{
+  font-family: 'San Francisco', sans-serif!important;
+}
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 2.1s; /* Change to speed up or slow down */
@@ -326,7 +329,6 @@ button:focus {
 }
 
 .heading {
-  padding-left: 50px !important;
   font-weight: 400 !important;
 }
 
@@ -481,6 +483,11 @@ button:focus {
 /* --------- */
 .footer-logo {
   width: 300px;
+}
+@media (max-width: 640px) {
+  .footer-logo {
+    width: 200px;
+  }
 }
 .footer {
   background-color: rgb(10, 4, 22);

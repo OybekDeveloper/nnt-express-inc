@@ -20,10 +20,14 @@ function Home() {
         <Container className="home-content screen">
           <Row>
             <Col md={7} className="home-header">
-              <div style={{ padding: 50, textAlign: "left" }}>
+              {/* <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
+              </div> */}
+              <div className="">
+                <p className="clamp2">A COMPANY PROFILE OF</p>
+                <h1 className="clamp  shimmer">NNT EXPRESS INC</h1>
               </div>
-              <h1 style={{ paddingBottom: 15}} className="heading clamp4">
+              <h1 style={{ paddingBottom: 15}} className="shimmer1 heading text-start clamp3 text-top">
                YOU HAVE A TASK , WE HAVE THE SOLUTION
                 {/* <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
