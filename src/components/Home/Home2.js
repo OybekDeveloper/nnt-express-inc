@@ -17,7 +17,7 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 className="clamp1">
-              WELCOME TO <span className="purple"> NNT EXPRESS</span>
+              WELCOME TO <span className="purple"> NNT EXPRESS INC</span>
             </h1>
             <p className="clamp4 home-about-body px-4">
               A leading IT company specializing in automation solutions. We're

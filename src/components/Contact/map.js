@@ -17,8 +17,8 @@ const Map = () => {
       </a>
       <iframe
         src="https://yandex.uz/map-widget/v1/?ll=69.322544%2C41.310656&mode=whatshere&whatshere%5Bpoint%5D=69.322335%2C41.310826&whatshere%5Bzoom%5D=17&z=18"
-        width="560"
-        height="400"
+        width="600"
+        height="500"
         frameBorder="1"
         allowFullScreen
         style={{ position: "relative" }}

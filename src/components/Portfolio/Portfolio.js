@@ -24,7 +24,7 @@ function Portfolio() {
               imgPath={pahlavonuz}
               isBlog={false}
               title="Pahlavon.uz"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              description="A site that uses React.js and Material-UI to introduce heavy spec techniques and is the brand face of the Pahlovon company."
               ghLink="https://github.com/soumyajit4419/Chatify"
               demoLink="https://chatify-49.web.app/"
             />
@@ -35,7 +35,7 @@ function Portfolio() {
               imgPath={hrai}
               isBlog={false}
               title="HR AI"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              description="A platform develop and integrated with React.JS, Django Rest framework and AI. THIS platform is a system that identifies interests and connects with courses by creating a MindMAP."
               ghLink="https://github.com/soumyajit4419/Editor.io"
               demoLink="https://editor.soumya-jit.tech/"
             />
@@ -46,7 +46,7 @@ function Portfolio() {
               imgPath={artifex}
               isBlog={false}
               title="ARTIFEX DE COLOR"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              description="A complete CRM platform that monitors product delivery from customers. It includes from preparation to sale of products."
               ghLink="https://github.com/soumyajit4419/Editor.io"
               demoLink="https://editor.soumya-jit.tech/"
             />
@@ -57,7 +57,7 @@ function Portfolio() {
               imgPath={daladan}
               isBlog={false}
               title="Dalada"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              description="A platform created to introduce the company's brand and its services to customers."
               ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
               demoLink="https://blogs.soumya-jit.tech/"
             />
@@ -68,7 +68,7 @@ function Portfolio() {
               imgPath={daladanadmin}
               isBlog={false}
               title="Dalada ADMIN"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              description="A platform created to introduce the company's brand and its services to customers. We have also created an additional admin service for this project."
               ghLink="https://github.com/soumyajit4419/Editor.io"
               demoLink="https://editor.soumya-jit.tech/"
             />
@@ -79,7 +79,7 @@ function Portfolio() {
               imgPath={biznes}
               isBlog={false}
               title="Biznes armiya"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              description="A platform that digitizes the office system. Through this, workers can be monitored and Tender can be played with them. And the internal currency was introduced and used in the form of VAB."
               ghLink="https://github.com/soumyajit4419/Editor.io"
               demoLink="https://editor.soumya-jit.tech/"
             />
