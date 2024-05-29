@@ -8,8 +8,8 @@ function ValuesSection() {
         <Row>
           <Col md={12} xs={{ order: 1 }} className="home-about-description">
             <h1
-              className="purple"
-              style={{ fontSize: "2.6em", fontWeight: "bold" }}
+              className="purple clamp1"
+              style={{ fontWeight: "bold" }}
             >
               Values We Hold
             </h1>
@@ -24,15 +24,15 @@ function ValuesSection() {
             <h1
               style={{
                 width: "200px",
-                fontSize: "1.2em",
                 padding: "10px 20px",
                 background: "#be50f4",
                 borderRadius: "10px",
               }}
+              className="clamp2"
             >
               VISION
             </h1>
-            <p className="home-about-body">
+            <p className="home-about-body clamp4">
               To be the premier leader in IT automation, empowering businesses
               worldwide to thrive in a digital future
             </p>
@@ -43,9 +43,9 @@ function ValuesSection() {
             className="home-about-description d-flex justify-content-start align-items-center flex-column"
           >
             <h1
+            className="clamp2"
               style={{
                 width: "200px",
-                fontSize: "1.2em",
                 padding: "10px 20px",
                 background: "#be50f4",
                 borderRadius: "10px",
@@ -53,7 +53,7 @@ function ValuesSection() {
             >
               MISSION
             </h1>
-            <p className="home-about-body">
+            <p className="home-about-body clamp4">
               {" "}
               At NNT Express, our mission is to simplify complexity and drive
               efficiency through innovative IT automation solutions. We are

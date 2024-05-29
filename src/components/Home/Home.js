@@ -17,13 +17,13 @@ function Home() {
     <section>
       <Container fluid className="home-section" id="home">
         <Particle />
-        <Container className="home-content">
+        <Container className="home-content screen">
           <Row>
             <Col md={7} className="home-header">
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
-              <h1 style={{ paddingBottom: 15}} className="heading">
+              <h1 style={{ paddingBottom: 15}} className="heading clamp4">
                YOU HAVE A TASK , WE HAVE THE SOLUTION
                 {/* <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
@@ -47,7 +47,7 @@ function Home() {
       <ValuesSection />
       <GoalSection />
       <ServiceSection />
-      <Container fluid className="home-about-section" id="about">
+      {/* <Container fluid className="home-about-section" id="about">
         <Container>
           <Row>
             <Col md={12} className="home-about-social">
@@ -100,7 +100,7 @@ function Home() {
             </Col>
           </Row>
         </Container>
-      </Container>
+      </Container> */}
     </section>
   );
 }

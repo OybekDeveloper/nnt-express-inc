@@ -8,8 +8,8 @@ const GoalSection = () => {
         <Row>
           <Col md={12} xs={{ order: 1 }} className="home-about-description ">
             <h1
-              className="purple"
-              style={{ fontSize: "2.6em", fontWeight: "bold" }}
+              className="purple clamp1"
+              style={{ fontWeight: "bold" }}
             >
               Goals to Achieve
             </h1>
@@ -22,9 +22,9 @@ const GoalSection = () => {
             className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
           >
             <h1
+            className="clamp2"
               style={{
                 width: "200px",
-                fontSize: "1.2em",
                 padding: "10px 20px",
                 background: "#be50f4",
                 borderRadius: "10px",
@@ -37,7 +37,7 @@ const GoalSection = () => {
           <Col
             md={9}
             xs={{ order: 1 }}
-            className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
+            className="clamp4 home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
           >
             <div>
               <ul className="text-start">
@@ -61,9 +61,9 @@ const GoalSection = () => {
             className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
           >
             <h1
+            className="clamp2"
               style={{
                 width: "200px",
-                fontSize: "1.2em",
                 padding: "10px 20px",
                 background: "#be50f4",
                 borderRadius: "10px",
@@ -76,7 +76,7 @@ const GoalSection = () => {
           <Col
             md={9}
             xs={{ order: 1 }}
-            className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
+            className="clamp4 home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
           >
             <div>
               <ul className="text-start">
@@ -100,9 +100,9 @@ const GoalSection = () => {
             className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
           >
             <h1
+            className="clamp2"
               style={{
                 width: "200px",
-                fontSize: "1.2em",
                 padding: "10px 20px",
                 background: "#be50f4",
                 borderRadius: "10px",
@@ -115,7 +115,7 @@ const GoalSection = () => {
           <Col
             md={9}
             xs={{ order: 1 }}
-            className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
+            className="clamp4 home-about-description d-flex justify-content-start gap-5 align-items-center flex-column flex-md-row"
           >
             <div>
               <ul className="text-start">

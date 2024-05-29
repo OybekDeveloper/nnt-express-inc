@@ -14,11 +14,12 @@ function AboutSection() {
           </Col>
           <Col md={8} xs={{ order: 1 }} className="home-about-description">
             <h1
-              style={{ fontSize: "2.6em", fontWeight: "bold" }}
+            className="clamp1"
+              style={{ fontWeight: "bold" }}
             >
               A BRIEF HISTORY OF<span className="purple"> Our Journey</span>
             </h1>
-            <p className="home-about-body px-4">
+            <p className="clamp4 home-about-body px-4">
               NNT Express embodies a tale of innovation and adaptability, rooted
               in a commitment to excellence and driven by a passion for
               transformation. Established in 2020 within the logistics sector,

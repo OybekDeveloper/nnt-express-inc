@@ -11,9 +11,7 @@ const ServiceSection = () => {
       <Container>
         <Row>
           <Col md={12} xs={{ order: 1 }} className="home-about-description">
-            <h1 className="purple" style={{ fontSize: "2.6em" }}>
-              Services{" "}
-            </h1>
+            <h1 className="purple clamp1">Services </h1>
           </Col>
         </Row>
         <Row>
@@ -23,9 +21,9 @@ const ServiceSection = () => {
             className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column"
           >
             <h1
+              className="clamp3"
               style={{
                 width: "250px",
-                fontSize: "1.2em",
                 padding: "10px 20px",
                 background: "#be50f4",
                 borderRadius: "10px",
@@ -35,7 +33,7 @@ const ServiceSection = () => {
               LOGISTICS SERVICES
             </h1>
             <div>
-              <ul className="text-start d-flex flex-column gap-4">
+              <ul className=" clamp4 text-start d-flex flex-column gap-4">
                 <li className="animate__animated animate__fadeInRight delay-4s">
                   Dispatching: We offer advanced dispatching solutions tailored
                   to meet the unique needs of our clients, enabling them to
@@ -64,9 +62,9 @@ const ServiceSection = () => {
             className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column"
           >
             <h1
+              className="clamp3"
               style={{
                 width: "250px",
-                fontSize: "1.2em",
                 padding: "10px 20px",
                 background: "#be50f4",
                 borderRadius: "10px",
@@ -76,7 +74,7 @@ const ServiceSection = () => {
               IT SERVICES
             </h1>
             <div>
-              <ul className="text-start d-flex flex-column gap-4">
+              <ul className="clamp4 text-start d-flex flex-column gap-4">
                 <li className="animate__animated animate__fadeInRight delay-4s">
                   Complete Platforms: We specialize in designing and
                   implementing complete platforms tailored to the specific needs
@@ -103,13 +101,10 @@ const ServiceSection = () => {
       <Container>
         <Row>
           <Col md={12} xs={{ order: 1 }} className="home-about-description">
-            <h1
-              className="purple"
-              style={{ fontSize: "2.6em", fontWeight: "bold" }}
-            >
+            <h1 className="purple clamp1" style={{ fontWeight: "bold" }}>
               Achievements{" "}
             </h1>
-            <p style={{ fontSize: "1rem" }}>
+            <p className="clamp3">
               WE ARE PROUD OF OUR ACHIEVEMENTS TO THIS DAY
             </p>
           </Col>
@@ -121,8 +116,8 @@ const ServiceSection = () => {
             className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column"
           >
             <h1
+              className="clamp2"
               style={{
-                fontSize: "2rem",
                 padding: "10px",
                 background: "#be50f4",
                 borderRadius: "10px",
@@ -131,7 +126,7 @@ const ServiceSection = () => {
             >
               100+
             </h1>
-            <p>TOTAL PROJECTS</p>
+            <p className="clamp4 ">TOTAL PROJECTS</p>
           </Col>
           <Col
             md={4}
@@ -139,8 +134,8 @@ const ServiceSection = () => {
             className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column"
           >
             <h1
+              className="clamp2"
               style={{
-                fontSize: "2rem",
                 padding: "10px",
                 background: "#be50f4",
                 borderRadius: "10px",
@@ -149,7 +144,7 @@ const ServiceSection = () => {
             >
               25+
             </h1>
-            <p>LOYAL CLIENTS</p>
+            <p className="clamp4 ">LOYAL CLIENTS</p>
           </Col>
           <Col
             md={4}
@@ -157,8 +152,8 @@ const ServiceSection = () => {
             className="home-about-description d-flex justify-content-start gap-5 align-items-center flex-column"
           >
             <h1
+              className="clamp2"
               style={{
-                fontSize: "2rem",
                 padding: "10px",
                 background: "#be50f4",
                 borderRadius: "10px",
@@ -167,101 +162,7 @@ const ServiceSection = () => {
             >
               95%
             </h1>
-            <p>CLIENT SATISFACTION </p>
-          </Col>
-        </Row>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ServicesCard
-              imgPath={chatify}
-              isBlog={false}
-              title="CONSULTATION"
-              description="- We initiate the process by
-              engaging with our clients to
-              deeply understand their
-              challenges, goals, and
-              requirements.
-              - Through in-depth discussions,
-              we gather insights into their
-              existing processes and areas for
-              improvement"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ServicesCard
-              imgPath={editor}
-              isBlog={false}
-              title="DELIBERATION"
-              description="- Internally, we collaborate to
-              analyze the information
-              gathered during the consultation
-              phase.
-              - Our team brainstorms ideas
-              and explores potential solutions
-              that align with the client's
-              objectives."
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ServicesCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="SOLUTION"
-              description="- Leveraging our expertise, we
-              design bespoke IT automation
-              solutions tailored to address the
-              specific needs identified during
-              consultation.
-              - Our focus is on developing
-              innovative strategies that
-              streamline workflows and
-              enhance operational efficiency."
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ServicesCard
-              imgPath={editor}
-              isBlog={false}
-              title="EVALUATION"
-              description="- We present the proposed
-              solutions to the client for review
-              and feedback.
-              - Facilitating open
-              communication, we iterate on
-              the proposed solutions based on
-              client input to ensure alignment."
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ServicesCard
-              imgPath={editor}
-              isBlog={false}
-              title="FINALIZATION"
-              description="- Fine-tuning and finalizing the
-              chosen solution, we address all
-              technical and logistical aspects
-              to meet the client's
-              requirements.
-              - Our goal is to deliver a
-              comprehensive solution that not
-              only meets but exceeds our
-              client's expectations."
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ServicesCard
-              imgPath={editor}
-              isBlog={false}
-              title="Mobile apps"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"
-            />
+            <p className="clamp4 ">CLIENT SATISFACTION </p>
           </Col>
         </Row>
       </Container>

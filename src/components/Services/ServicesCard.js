@@ -9,9 +9,11 @@ function ServicesCard(props) {
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+        <Card.Title>
+          <h1 className="clamp2">{props.title}</h1>
+        </Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
+          <p className="clamp4">{props.description}</p>
         </Card.Text>
       </Card.Body>
     </Card>

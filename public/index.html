@@ -15,6 +15,19 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.title = "NNT EXPRESS INC";
+      // Title element rangini o'zgartirish
+      let style = document.createElement('style');
+      style.innerHTML = `
+        title {
+          color: red;
+        }
+      `;
+      document.head.appendChild(style);
+    });
+  </script>
 </body>
 
 </html>

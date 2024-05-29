@@ -16,10 +16,10 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h1 className="clamp1">
               WELCOME TO <span className="purple"> NNT EXPRESS</span>
             </h1>
-            <p className="home-about-body px-4">
+            <p className="clamp4 home-about-body px-4">
               A leading IT company specializing in automation solutions. We're
               dedicated to simplifying and optimizing workflows through our
               advanced software platforms. With a focus on practicality and

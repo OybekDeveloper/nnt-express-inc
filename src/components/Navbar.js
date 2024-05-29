@@ -4,9 +4,11 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
+import { CiCircleChevDown } from "react-icons/ci";
+import { motion } from "framer-motion";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -18,9 +20,24 @@ import { CgFileDocument } from "react-icons/cg";
 import { mainLogo } from "../img";
 
 function NavBar() {
+  const navigate = useNavigate();
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-
+  const [isOpen, setIsOpen] = useState(false);
+  const servicesData = [
+    {
+      id: 1,
+      title: "IT SERVICES",
+      icon: <AiOutlineFundProjectionScreen />,
+      link: "/it",
+    },
+    {
+      id: 2,
+      title: "LOGISTICS SERVICES",
+      icon: <CgFileDocument />,
+      link: "/logistics",
+    },
+  ];
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
@@ -28,6 +45,15 @@ function NavBar() {
       updateNavbar(false);
     }
   }
+  const handleClickServices = (service) => {
+    navigate(`${service.link}`);
+    updateExpanded(false);
+    setIsOpen(false);
+  };
+
+  const handleClickOpen = () => {
+    setIsOpen(!isOpen);
+  };
 
   window.addEventListener("scroll", scrollHandler);
 
@@ -69,20 +95,42 @@ function NavBar() {
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/services"
-                onClick={() => updateExpanded(false)}
-              >
+            <Nav.Item
+              onClick={handleClickOpen}
+              className="position-relative nav-item d-flex justify-content-center align-items-center cursor-pointer"
+            >
+              <Nav.Link className="" as={Link} to="/">
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Services
               </Nav.Link>
+              <div className="d-md-none">
+                <CiCircleChevDown />
+              </div>
+              <div className="position-absolute services-options">
+                {servicesData.map((item, idx) => (
+                  <p onClick={() => handleClickServices(item)} key={idx}>
+                    {item.title}
+                  </p>
+                ))}
+              </div>
             </Nav.Item>
-
+            <motion.div
+            className="d-md-none"
+              initial={{ height: 0, scale: 0 }}
+              animate={{ height: isOpen ? 100 : 0, scale: isOpen ? 1 : 0 }}
+            >
+              {servicesData.map((item, idx) => (
+                <p
+                  className="clamp3 text-end cursor-pointer mobile-services"
+                  onClick={() => handleClickServices(item)}
+                  key={idx}
+                >
+                  {item.title}
+                </p>
+              ))}
+            </motion.div>
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -103,13 +151,23 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item> */}
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/blog"
                 onClick={() => updateExpanded(false)}
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> Blog
+              </Nav.Link>
+            </Nav.Item> */}
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/contact"
+                onClick={() => updateExpanded(false)}
+              >
+                <ImBlog style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
 
@@ -122,7 +180,6 @@ function NavBar() {
                 <ImBlog style={{ marginBottom: "2px" }} /> Vacancies
               </Nav.Link>
             </Nav.Item> */}
-
           </Nav>
         </Navbar.Collapse>
       </Container>
